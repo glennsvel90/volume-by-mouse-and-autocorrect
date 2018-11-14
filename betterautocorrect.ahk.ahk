@@ -1,34 +1,39 @@
-﻿#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 
 
-::tf::True or False?
+::tf::True or False? :  
 
-	
-;Always on features
-;----------------------
-;use the unused tilda key as a backspace button
-$`::Backspace
-$+`::send {~}
-$^`::send ``
+^!g::
+send, #{TAB}
 
 
+:r0:````````::
+(
+,,,,,
 
-;adjust volume by holding down the left mouse button and then press the right button to turn up the Windows volume, and holding down the right mouse button and pressing the left button will turn the volume down.
+```````
+
+
+)^+={left 6}
+
+::mm::mySQL
+
+
 ~LButton & RButton::
 {
 Loop
 {
-GetKeyState, state, LButton 
+GetKeyState, state, LButton
 if state = U
 {
 break
 }
 Sleep, 100
-Send {Volume_Up 1}
+Send {Volume_Up 2}
 }
 
 Return
@@ -38,23 +43,17 @@ Return
 {
 Loop
 {
-GetKeyState, state, RButton 
+GetKeyState, state, RButton
 if state = U
 {
 break
 }
 Sleep, 100
-Send {Volume_Down 1}
+Send {Volume_Down 2}
 }
 
 Return
 }
-
-;--------------------------------------
-
-
-
-
 
 ;------------------------------------------------------------------------------
 ; CHANGELOG:
@@ -142,7 +141,7 @@ Return
 ;------------------------------------------------------------------------------
 ; Win+H to enter misspelling correction.  It will be added to this script.
 ;------------------------------------------------------------------------------
-^v::
+^b::
 ; Get the selected text. The clipboard is used instead of "ControlGet Selected"
 ; as it works in more editors and word processors, java apps, etc. Save the
 ; current clipboard contents to be restored later.
@@ -5351,3 +5350,20 @@ return  ; This makes the above hotstrings do nothing so that they override the i
 ;-------------------------------------------------------------------------------
 ; Anything below this point was added to the script by the user via the Win+H hotkey.
 ;-------------------------------------------------------------------------------
+::resutl::result
+::bulder::builder
+::deos ::does 
+::follwong::following
+::follwoing::following
+::ocmpletely ::completely 
+::completley::completely
+::comolelte::completely
+::algorithsm::algorithm
+::impriovement::improvement
+::repat ::repeat
+::sjare ::share
+::curiousity ::curiositu
+::wHEN::When
+::pYTHON::Python
+::when::when
+::youtuobe::youtube
