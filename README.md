@@ -9,7 +9,7 @@ Control volume by using the mouse buttons, and have spelling autocorrect on.
 * Microsoft Windows 10
 * AutoHotkey
 * Chrome Extension and/or Firefox Extension called "Video Speed Controller"  
-
+* <a href="https://github.com/Wox-launcher/Wox/releases/download/v1.3.524/Everything-1.3.4.686.x64-Setup.exe/">Everything search/</a> 
 
 ### Installing
 
@@ -41,3 +41,4 @@ To advance 10 seconds forwards, press the following keys simultaneously:  d and 
 ## Everything Search
 
 To search for any file, press the following keys simultaneously: f and space
+
