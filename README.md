@@ -25,6 +25,7 @@ If you chose to place the script in the windows startup folder, a simple restart
 ## Volume Controls
 
 To decrease volume: Right-click the mouse, then immediately left-click, holding down the left buttons
+
 To increase volume: Left-click the mouse, then immediately right-click, holding down the right buttons
 
 ## Video Speed Controller
