@@ -1,6 +1,6 @@
 # volume-by-mouse-and-autocorrect
 
-Control volume by using the mouse buttons, and have spelling autocorrect on.
+Control volume by using the mouse buttons, and have spelling autocorrect on. More shortcuts are included for other features too.
 
 ## Getting Started
 
@@ -42,5 +42,9 @@ Despite these key inputs, don't use them. Instead:
 
 ## Everything Search
 
-To search for any file, press the following keys simultaneously: f and space
+To search for any file, press the following keys three times rapidly: f
+
+## Google Translate highlighted Text
+
+Press the following keys simultaneously: control and shift and x
 
