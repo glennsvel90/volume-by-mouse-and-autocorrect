@@ -36,6 +36,7 @@ Right-click the Video Speed Controller extension and click on its options. Chang
 Despite these key inputs, don't use them. Instead:
 
 To rewind 10 seconds backwards, press the following keys simultaneously:  d and c 
+
 To advance 10 seconds forwards, press the following keys simultaneously:  d and f 
 
 ## Everything Search
