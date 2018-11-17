@@ -19,9 +19,64 @@ return
 send, ^{ENTER}
 return
 
-~f & space::
-send, ^q
+
+
+
+
+
+
+
+^+x::
+{
+Send, ^c
+Sleep 50
+Run, https://www.google.com/search?ei=oZLwW_mPLY7HjgSR5Y7gAQ&q=%clipboard%+in+spanish&oq=i+in+spanish&gs_l=psy-ab.3..0i7i30j0i20i263j0i67j0i7i30l2j0j0i7i30j0i20i263j0i7i30l2.3453.3453..4313...0.0..0.247.247.2-1......0....1..gws-wiz.......0i71.yU9x0uzEd1o
+
+Return
+}
+
+
+
+
+
+
+
+; Keypress detection for f.
+~f::
+if counter >= 0 ; setTimer already started, so we log the keypress instead
+{
+	counter++
+	return
+}
+counter = 0 ; Start setTimer and set the number of logged keypresses to 0
+setTimer,keyf, 400
 return
+
+keyf:
+setTimer,keyf,off
+if counter = 0 ; The key is pressed once
+{
+	return
+}
+if counter = 1 ; The key is pressed twice
+{
+	return
+}
+if counter = 2 ; The key is pressed thrice
+{
+	send, ^q
+reload
+}
+counter = -1
+
+return
+
+
+
+
+
+
+
 
 
 ~d & f::
@@ -67,7 +122,7 @@ Send {Volume_Down 2}
 Return
 }
 
-;---don't write under this segement undtil the word "CHANGELOG" appears---------------------------------------------------------------------------
+;---don't write under this segement until the word "CHANGELOG" appears---------------------------------------------------------------------------
 :r0:````````::
 (
 ,,,,,
