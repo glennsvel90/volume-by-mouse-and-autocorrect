@@ -10,15 +10,27 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ^!g::
 send, #{TAB}
 
+~` & 1::
+send, {F7}
+send, ^+b
+return
 
-:r0:````````::
-(
-,,,,,
+~d & space::
+send, ^{ENTER}
+return
 
-```````
+~f & space::
+send, ^q
+return
 
 
-)^+={left 6}
+~d & f::
+send, h
+return
+
+~d & c::
+send, g
+return
 
 ::mm::mySQL
 
@@ -54,6 +66,17 @@ Send {Volume_Down 2}
 
 Return
 }
+
+;---don't write under this segement undtil the word "CHANGELOG" appears---------------------------------------------------------------------------
+:r0:````````::
+(
+,,,,,
+
+```````
+
+
+
+)^+={left 7}
 
 ;------------------------------------------------------------------------------
 ; CHANGELOG:
