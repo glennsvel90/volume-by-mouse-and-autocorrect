@@ -24,9 +24,9 @@ If you chose to place the script in the windows startup folder, a simple restart
 
 ## Volume Controls
 
-To decrease volume: Right-click the mouse, then immediately left-click, holding down the left buttons
+-To decrease volume: Right-click the mouse, then immediately left-click, holding down the left buttons
 
-To increase volume: Left-click the mouse, then immediately right-click, holding down the right buttons
+-To increase volume: Left-click the mouse, then immediately right-click, holding down the right buttons
 
 ## Video Speed Controller
 
@@ -36,9 +36,9 @@ Right-click the Video Speed Controller extension and click on its options. Chang
 
 Despite these key inputs, don't use them. Instead:
 
-To rewind 10 seconds backwards, press the following keys simultaneously:  d and c 
+-To rewind 10 seconds backwards, press the following keys simultaneously:  d and c 
 
-To advance 10 seconds forwards, press the following keys simultaneously:  d and f 
+-To advance 10 seconds forwards, press the following keys simultaneously:  d and f 
 
 ## Everything Search
 
