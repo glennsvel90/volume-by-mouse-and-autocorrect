@@ -5,6 +5,93 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 
 
+
+
+#ifwinactive, AutoHotkey.ahk - Notepad
+
+~^s::
+reload
+return
+
+#ifwinactive
+
+
+
+
+
+Settimer, relo, 60000
+return
+
+relo: 
+reload
+return
+
+
+
+
+
+
+#IfWinActive, 	Audible   ; Only make hotkeys for specified window
+  d::Click 1410, 540                  ;  Send a mouse-click (left-click)
+  f::Click 1674, 546 
+  e::
+
+  {
+  Click 1255, 793
+  Sleep, 100
+  Click 1151, 618
+  Sleep, 100
+  Click 1262, 901
+  return
+  }
+  r::
+
+    {
+  Click 1255, 793
+  Sleep, 100
+  Click 1412, 621
+  Sleep, 100
+  Click 1262, 901
+  return
+  }
+                 
+#IfWinActive
+
+
+
+
+; Keypress detection for d.
+~d::
+if counter >= 0 ; setTimer already started, so we log the keypress instead
+{
+	counter++
+	return
+}
+counter = 0 ; Start setTimer and set the number of logged keypresses to 0
+setTimer,keyd, 400
+return
+
+keyd:
+setTimer,keyd,off
+if counter = 0 ; The key is pressed once
+{
+	return
+}
+if counter = 1 ; The key is pressed twice
+{
+	return
+}
+if counter = 2 ; The key is pressed thrice
+{
+	send, {Backspace}{Backspace}{Backspace}^{enter}
+reload
+return
+}
+counter = -1
+
+return
+
+
 ::tf::True or False? :  
 
 ^!g::
@@ -64,8 +151,9 @@ if counter = 1 ; The key is pressed twice
 }
 if counter = 2 ; The key is pressed thrice
 {
-	send, ^q
+	send, {Backspace}{Backspace}{Backspace}^q
 reload
+return
 }
 counter = -1
 
